@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# First section of code is provided lists for practice with loops, lists and dictionaries.
+# First few sections of code are provided lists for practice with loops, lists and dictionaries.
 
 # names of hurricanes
 names = ['Cuba I', 'San Felipe II Okeechobee', 'Bahamas', 'Cuba II', 'CubaBrownsville', 'Tampico', 'Labor Day', 
