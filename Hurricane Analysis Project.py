@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# First block of code is the provided lists for practice with lists and dictionaries.
-
-# In[2]:
-
+# First section of code is provided lists for practice with loops, lists and dictionaries.
 
 # names of hurricanes
 names = ['Cuba I', 'San Felipe II Okeechobee', 'Bahamas', 'Cuba II', 'CubaBrownsville', 'Tampico', 'Labor Day', 
@@ -75,9 +72,6 @@ deaths = [90,4000,16,3103,179,184,408,682,5,1023,43,319,688,259,37,11,2068,269,3
 
 # My code starts here.
 
-# In[3]:
-
-
 # write your update damages function here:
 def update_damages(damages):
     # dictionary to handle the conversion from m to million and b to billion
@@ -97,10 +91,6 @@ def update_damages(damages):
 damages_update = update_damages(damages)
 # print(damages_update)
 
-
-# In[33]:
-
-
 # write your construct hurricane dictionary function here:
 def construct_hurricane_dict(name, month, year, max_wind, area, damage, death):
     # empty dictionary for return
@@ -119,9 +109,6 @@ def construct_hurricane_dict(name, month, year, max_wind, area, damage, death):
 # Use function on all of the data to form a dictionary of dictionaries. Test by printing result. 
 hurricanes = construct_hurricane_dict(names, months, years, max_sustained_winds, areas_affected, damages_update, deaths)
 #print(hurricanes)
-
-
-# In[6]:
 
 
 # write your construct hurricane by year dictionary function here:
@@ -145,10 +132,6 @@ def construct_hurricane_by_year(hurricanes):
 hurricanes_by_year = construct_hurricane_by_year(hurricanes)
 #print(hurricanes_by_year[1932])
 
-
-# In[17]:
-
-
 # write your count affected areas function here:
 def count_num_area_affected(hurricanes):
     # empty dictionary to store result
@@ -171,9 +154,6 @@ area_count = count_num_area_affected(hurricanes)
 #print(area_count)
 
 
-# In[18]:
-
-
 # write your find most affected area function here:
 def find_most_affected_area(area_count_dict):
     # two variables for most affected area and the count
@@ -191,9 +171,6 @@ def find_most_affected_area(area_count_dict):
 find_most_affected_area(area_count)
 
 
-# In[19]:
-
-
 # write your greatest number of deaths function here:
 def find_deadliest(hurricanes):
     # create variables for hurricane and number of deaths
@@ -209,9 +186,6 @@ def find_deadliest(hurricanes):
     return print('The deadliest hurricane was {name} with {count} deaths.'.format(name=deadliest, count=max_deaths))
 # test output on hurricanes dictionary
 find_deadliest(hurricanes)
-
-
-# In[26]:
 
 
 # write your catgeorize by mortality function here:
@@ -239,9 +213,6 @@ hurricanes_by_mortality = construct_by_mortality(hurricanes)
 #print(hurricanes_by_mortality)
 
 
-# In[31]:
-
-
 # write your greatest damage function here:
 def find_costliest(hurricanes):
     # create variables for hurricane and damage cost
@@ -259,9 +230,6 @@ def find_costliest(hurricanes):
     # print a message with the information        
     return print('The most expensive hurricane was {name} with ${damage} in damages.'.format(name=costliest, damage=max_cost))
 find_costliest(hurricanes)
-
-
-# In[36]:
 
 
 # write your catgeorize by damage function here:
